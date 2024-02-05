@@ -68,6 +68,8 @@ All the data for roadmap example is located under **examples/roadmap.yml**
 
 ### Adapt roadmap for your own needs
 
+ROGER WAS HERE
+
 As a default, the roadmap data is located under **examples/roadmap.yml**.
 
 You can modifiy this file according to your team or project needs inside this file.
