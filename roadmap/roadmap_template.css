@@ -86,8 +86,8 @@ h1, h2, h3, h4, h5 {
     font-weight: 300;
     break-after: avoid;
     display: block;
-    padding:0;
-    margin: 0;
+    padding:0px;
+    margin: 0px;
 
 }
 
@@ -168,9 +168,15 @@ r-objective, r-milestone {
     border-radius: 5px;
     position:relative;
 
-    margin: 1rem 1rem 2rem 0;
+    margin-top: 1rem; 
+    margin-bottom: 2rem; 
+    margin-left: 0rem; 
+    margin-right: 1rem; 
 
-    padding: 0.5rem;
+    padding-top: 0.5rem; 
+    padding-bottom: 0.5rem; 
+    padding-left: 0.5rem; 
+    padding-right: 0.5rem; 
 
 }
 
@@ -194,8 +200,8 @@ r-keyresults {
     padding: 1rem 1rem 0.5rem 2rem;
     position: relative;
     margin-left: 7rem;
-    margin-top: 0;
-    margin-bottom: 0;
+    margin-top: 0rem;
+    margin-bottom: 0rem;
     display: block;
 }
 
@@ -233,10 +239,16 @@ r-deliverable {
     display: block;
     border-radius: 5px;
     position:relative;
+    
+    margin-top: 0rem; 
+    margin-bottom: 0.8rem; 
+    margin-left: 0rem; 
+    margin-right: 0rem; 
 
-    margin: 0 0 0.8rem;
-
-    padding: 0.5rem 0.5rem 0.2rem 0.8rem;
+    padding-top: 0.5rem; 
+    padding-bottom: 0.2rem; 
+    padding-left: 0.8rem; 
+    padding-right: 0.5rem; 
 }
 
 r-objective {
@@ -262,6 +274,7 @@ r-milestone > r-header {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: flex-start;
     align-items: flex-start;
     flex: 1 auto;
     justify-content: space-between;
@@ -294,6 +307,7 @@ r-deliverable > r-header {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
+    justify-content: flex-start;
     align-items: flex-start;
     justify-content: space-between;
     padding-top: 0.2rem;
@@ -329,9 +343,14 @@ r-deliverable > r-header > r-state {
 
 r-state > span, 
 r-requirement > span {
-    margin: 0 0.2rem;
-    padding: 0.1rem 0.2rem;
-    border-radius: 0.25rem;
+        margin:0rem;
+        margin-left: 0.2rem;
+        margin-right: 0.2rem;
+        padding-top: 0.1rem;
+        padding-bottom: 0.1rem;
+        padding-left: 0.2rem;
+        padding-right: 0.2rem;
+        border-radius: 0.25rem;
         border: 1px solid var(--color_state_todo);
         background-color: var(--color_state_todo);;
         color: var(--color_state__text);
@@ -575,8 +594,8 @@ r-milestones::after {
     position: absolute;
     width: 0.45rem;
     background-color: gray;
-    top: 0;
-    bottom: 0;
+    top: 0rem;
+    bottom: 0rem;
     left: 50%;
     margin: 0 auto;
     padding:0;
@@ -632,16 +651,16 @@ r-milestone:nth-child(even)::before {
         left: 0;
         display:block;
         margin-right: 1rem;
-        margin-left:0;
+        margin-left:0px;
         width: 90%;
     }
     r-milestone:nth-child(odd) {
         margin-right: 1rem;
-        margin-left:0;
+        margin-left:0px;
     }
     r-milestone:nth-child(even) {
         margin-right: 1rem;
-        margin-left:0;
+        margin-left:0px;
     }
 
     /* Make sure that all arrows are pointing leftwards */
@@ -657,6 +676,7 @@ r-milestone:nth-child(even)::before {
 
     /* Make all right containers behave like the left ones */
     r-milestone:nth-child(even) {
+        left: 0%;
         left:0;
         margin-left: 0;
     }
@@ -666,7 +686,7 @@ r-milestone:nth-child(even)::before {
         font-weight: bold !important;
         font-size: 0.9rem !important;
         text-align: right !important;
-        left: 0;
+        left: 0rem;
     }
 
     r-milestone > r-date {
@@ -675,7 +695,7 @@ r-milestone:nth-child(even)::before {
         font-weight: bold !important;
         font-size: 0.9rem !important;
         text-align: right !important;
-        left: 0;
+        left: 0rem;
     }
 }
 /* Media queries - Responsive r-timeline on screens less than 600px wide */
@@ -690,17 +710,17 @@ r-milestone:nth-child(even)::before {
         left: 0;
         display:block;
         margin-right: 1rem;
-        margin-left:0;
+        margin-left:0px;
         break-inside: avoid-page;
         
     }
     r-milestone:nth-child(odd) {
         margin-right: 1rem;
-        margin-left:0;
+        margin-left:0px;
     }
     r-milestone:nth-child(even) {
         margin-right: 1rem;
-        margin-left:0;
+        margin-left:0px;
     }
 
     /* Make sure that all arrows are pointing leftwards */
@@ -715,12 +735,12 @@ r-milestone:nth-child(even)::before {
 
     /* Make all right containers behave like the left ones */
     r-milestone:nth-child(even) {
-        left: 0;
+        left: 0%;
         left:0;
         margin-left: 0;
     }
     r-milestone:nth-child(even) {
-        left: 0;
+        left: 0%;
         left:0;
         margin-left: 0;
     }
@@ -730,7 +750,7 @@ r-milestone:nth-child(even)::before {
         font-weight: bold !important;
         font-size: 0.9rem !important;
         text-align: right !important;
-        left: 0;
+        left: 0rem;
     }
 
     r-milestone > r-date {
@@ -739,7 +759,7 @@ r-milestone:nth-child(even)::before {
         font-weight: bold !important;
         font-size: 0.9rem !important;
         text-align: right !important;
-        left: 0;
+        left: 0rem;
     }
 }
 
@@ -754,11 +774,11 @@ r-description > ul {
     display: flex;
     flex-direction: row;
     
-    padding: 0;
+    padding: 0rem;
     padding-top: 1rem;
     padding-bottom: 0.5rem;
     
-    margin: 0;
+    margin: 0rem;
     margin-right: 2rem;
     margin-bottom:1rem;
 
@@ -773,16 +793,16 @@ r-description > ul {
 
 .authors > ul {
     list-style: none;
-    margin: 0;
-    padding: 0;
+    margin: 0rem;
+    padding: 0rem;
     margin-left: 2.65rem;
 
 }
 
 .author {
-    margin: 0;
+    margin: 0rem;
     margin-bottom: 0.5rem;
-    padding: 0;
+    padding: 0rem;
     border-left: 2px solid rgba(200,200,200,.5);
 }
 
@@ -798,11 +818,17 @@ r-description > ul {
 r-timeline {
     border-left: 0.3rem solid var(--keyresults_circle_border_color);
     background: var(--keyresults_background);
+    
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    margin-left: 7rem;
+    margin-right: 2rem;
 
-    margin: 1rem 2rem 1rem 7rem;
-
-    padding: 0.5rem 1rem 1rem 1.1rem;
-
+    padding-top: 0.5rem ;
+    padding-bottom: 1rem;
+    padding-left: 1.1rem;
+    padding-right: 1rem;
+    
     position: relative;
     display: block;
 }
@@ -811,10 +837,11 @@ r-timeline > r-timeline-item {
     text-align: left;
     position: relative;
     display: block;
+    
+    margin:0rem;
+    padding:0rem;
 
-    padding: 0;
-
-    margin: 0.5rem 0 0;
+    margin-top: 0.5rem;
 
 }
 
@@ -834,7 +861,7 @@ r-timeline > r-timeline-item::after {
 r-timeline > r-timeline-item > r-date {
     position: absolute;
     left:-8rem;
-    top: 0;
+    top: 0rem;
     font-weight: bold;
     font-size: 0.9rem;
     width: 6rem;
@@ -848,18 +875,18 @@ r-timeline > r-timeline-item > r-description {
     text-align: left;
     position: relative;
     padding-bottom: 1rem;
-    margin-bottom: 0;
+    margin-bottom: 0rem;
     display: block;
 }
 r-timeline > r-timeline-item > r-description > p {
-    margin: 0;
-    padding: 0;
+    margin:0rem;
+    padding:0rem;
     padding-top: 0.5rem;
 }
 
 r-timeline > r-timeline-item > r-description > ul,h5,h6 {
     margin-top: 0.5rem;
-    margin-bottom: 0;
+    margin-bottom: 0rem;
 }
 r-timeline > r-timeline-item > r-description > ul,p {
     font-size: 0.9rem;
@@ -869,7 +896,7 @@ r-timeline > r-timeline-item > r-description > ul,p {
 r-milestone > r-date {
     display: block;
     position: absolute;
-    bottom: 0;
+    bottom: 0rem;
     right: -11.5rem;
     width: 9rem;
     border-bottom: 0.1rem solid var(--milestone_boxshadow);
@@ -882,7 +909,7 @@ r-milestone > r-date {
 r-deliverable > r-date {
     display: block;
     position: absolute;
-    bottom: 0;
+    bottom: 0rem;
     right: -12rem;
     width: 9rem;
     border-bottom: 0.1rem dashed grey;
@@ -904,7 +931,7 @@ r-milestone:nth-child(even) > r-date {
 r-objective > r-date {
     display: block;
     position: relative;
-    right: 0;
+    right: 0rem;
     font-weight: bold;
     text-align: left;
     color: gray;
@@ -927,8 +954,8 @@ r-todos {
 }
 r-todo {
     display: block;
-    margin: 0;
-    padding: 0;
+    margin: 0rem;
+    padding: 0rem;
     margin-bottom: 0.3rem;
     margin-left: 0.3rem;
     font-size: 0.8rem !important;
@@ -954,8 +981,8 @@ r-todo > r-description {
     padding-left: 0.9rem;
 }
 r-todo > r-description > p {
-    padding-bottom: 0;
-    margin-bottom: 0;
+    padding-bottom: 0rem;
+    margin-bottom: 0rem;
     font-size: 0.8rem !important;
 }
 
@@ -984,6 +1011,7 @@ r-todo > r-description > p {
     /* Position the tooltip text - see examples below! */
     position: absolute;
     z-index: 1;
+    width: auto;
     top: 100%;
     left: 50%;
     margin-left: -60px; /* Use half of the width (120/2 = 60), to center the tooltip */
@@ -1007,8 +1035,11 @@ r-todo > r-description > p {
 r-quantifiers {
     border-top: 1px dashed gray;
     display: block;
-    margin: 0;
-    padding: 0.5rem 0.2rem;
+    margin:0rem;
+    padding-top:0.5rem;
+    padding-bottom:0.5rem;
+    padding-left:0.2rem;
+    padding-right:0.2rem;
     font-size: 0.8rem;
     color: black;
     
@@ -1017,12 +1048,12 @@ r-weighted_shortest_job_first,r-cost_of_delay,r-jobsize, r-user_business_value, 
     display:inline-block;
     width: auto;
     background-repeat: no-repeat;
-    margin-top: 0;
+    margin-top:0rem;
     margin-bottom:0.5rem;
     padding-left: 1.3rem;
     padding-right: 0.5rem;
-    padding-top: 0;
-    text-wrap: none;
+    padding-top: 0rem;
+    text-wrap: nowrap;
 }
 
 r-cost_of_delay {
@@ -1048,17 +1079,17 @@ r-opportunity_enablement_or_risk_reduction {
     border-collapse: collapse;
 }
 .tooltip td {
-    border: 0;
+    border: 0px;
     margin: 0;
     padding:0;
     vertical-align: top;
-    text-wrap: none;
+    text-wrap: nowrap;
     padding-top:0.1rem;
     padding-bottom:0.1rem;
 }
 .tooltip td:nth-child(2) {
     text-align: right;
-    padding-left: 0;
+    padding-left: 0rem;
     font-weight: bold;
 }
 .tooltip tr {

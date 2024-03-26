@@ -1,32 +1,13 @@
 # This is a list of todos and ideas
 
-- [ ] #16 - allow a connection between keyresults and milestones
+This list is a scratchpad during development of a new features to break down some work into smaller parts.
 
-- [ ] #13 - add involved teams for keyresults
+### TODOS
+- [ ] 
 
-- [ ] add missing parts to the templates
-    - involved teams
-    - releases
-    - ...some more?? (see #29)
 
-- [ ] use gitpages for demonstration of roadmap.py capabilities
-    - use roadmap.html and maybe the readme or some more stuff
 
-- [ ] render roadmap as pdf
+## Reminder Notes
+The function get_key_value_list() contains a lot of the logic to refactor remove_element().
 
-- [ ] render roadmap as xls
-
-- [ ] Milestones: make deliverables foldable (SHOULD)
-
-- [ ] Objectives: make keyresults foldable (MAY)
-
-- [ ] HTML Template: Add Timeline-Ruler if screen < 600px
-    just now, the timeline-ruler is display:none if screensize < 600px
-    it would be nice, if we can see the marker but only leftside...
-
-- [ ] Allow user-defined templates OR some mechanic to controll the order of Milestone vs Objective, Rendering of some roadmap elements
-
-- [ ] markdown-template: Add missing releases
-
-- [ ] html-template: Add missing releases
-
+Markdown Template needs refactoring. There are a bunch of empty lines. looks terrible in the md file, but renders okayish.

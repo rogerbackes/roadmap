@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Roadmap for roadmap.py</title>
+        <title>Roadmap for roadmap.py (1a3e914d/20240302100338)</title>
         <style>
             /* Print Style */
 @page {
@@ -60,6 +60,24 @@
     --color_state_may: #008450;
     
     --color_state__text: white;
+
+    --color_tooltip_background: lightblue;
+    --color_tooltip_boxshadow: gray;
+    --color_tooltip_arrow: red;
+
+    /* Embeded Icons for quantifiers - for offline support */
+    /* Icon 'streamline-pixel--free--14x14-Business-Products-Performance-Money-Decrease.png' from https://www.streamlinehq.com/ */
+    --icon_quantifiers_cost_of_delay: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAOCAYAAAAfSC3RAAABCElEQVR4nHXQMVLCQBiG4c0JTOcRsNycgKSytKTUTujW0kpvQKwcbyClJwhU2GWtNDeQylDa+X7s/EzCjO/MAzM/85GBzKVqTFGhh+WhIkZlsAKuUUB5NFAVIlSNkPEyTMcpAt5QutTaOXeFGnuUp0MVsESBCOXRQm1wHOqDM6g9IqwcDTzUBoehDhPsoM7RIULl8LB6RA1bVNBB5dATCvxbhogtLqC+sMLajdOXqQ8EDXvc4hs6XmIBK+DGpXflMdHwB3PsMMMLIizdOtjNo9GwxTt+oeMnXmE9IeDRpfT54TeWLn3rcLiCtcQdHqD0H9xrOKzGFgtYz+gQcex0qGaYw9LTRiP1B3j/QPxnrZ9XAAAAAElFTkSuQmCC');
+    /* Icon 'streamline-pixel--free--14x14-wrench.png' from https://www.streamlinehq.com/ */
+    --icon_quantifiers_jobsize: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAOCAYAAAAfSC3RAAAAzUlEQVR4nJXRuQ3CQABE0XEHS0RKSEgJpgQiUkpwSgWkEEFGC3TAlgARIqMEdwB/WK24fIgvPZAljw+50KsaJwTssUFr78M5rrhJikoqNOZhDVdKWqNUGrlSLXkYla58hBsgKlWqJQ+3WKKGC3BRHe/qoU9cYQw3g499saikwkcefpef4H38c+emYUAe5f+opMKzpmHu+84HuAuWXcOAPHI1XMCqa5iLSp/ljjMW4nv/O5xiiF3BT19b+HFHShfxo6pAXz7R7+rvPMEAegDuLC1lknRX8AAAAABJRU5ErkJggg==');
+    /* Icon 'streamline-pixel--free--14x14-Map-Navigation-Pin-Location-Trip.png' from https://www.streamlinehq.com/ */
+    --icon_quantifiers_weighted_shortest_job_first: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAOCAYAAAAfSC3RAAAA8ElEQVR4nH3QsU3DUBSF4cMGb4uICm/A24KWknSmZAK3pqJ1m4oRuBtgymwRNsh/dGX5WXLySx9Efjp+UR609gP3hx5387BgwAee8I8DTriZh1/wyDd2+MQk6VV3bvYwJFVJM3yjhz1C+Xy3dljQIZSF8vluHlZlobXQ+rxgwCNcj9nDAh8c4ToccIJbfoNvvMNnZw/diEm8CS84w59DeXNIeobzJvxnyYM3+K0euVAOO/zCZyM2wwJ3wdKISeuLXMHQDquy0LbQeuaqqB36Te6CtqoslIV41g6rstC2ggFHjJjEV2+Hzgd79Qjl/xm6AuiZNZalitGHAAAAAElFTkSuQmCC');
+    /* Icon 'streamline-pixel--free--14x14-Hand-Awesome--Streamline-Pixel.png' from https://www.streamlinehq.com/ */
+    --icon_quantifiers_user_business_value: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAOCAYAAAAfSC3RAAAAzElEQVR4nI3RsQ2CUBSF4eMGbGHp28DnFLa2dlg6gaV0trZ2jnBHoHULR/C/vlwEBOOffAXknmDiQvMlnLHBVwvMZZKypAuOeKLrn2FWydRrbpiwk1Qjq2TqFcMGK3gHLHGD9/OnmspXvKvKlyqcYJL2iGq0/WGUVarg3ZH1ycRzf7iGF++8hAbjchyZpocmjjTMxLs4Mk0PExqMy3Fkmh6aONIwE+/iyDQ99J5o4SVU6I5Mn6Gp/JctvC0e8Ja4oRs2SPCyhs9RixrvXl+pKQ9nLDyoAAAAAElFTkSuQmCC');
+    /* Icon 'streamline-pixel--free--14x14-Interface-Essential-Alert--Streamline-Pixel.png' from https://www.streamlinehq.com/ */
+    --icon_quantifiers_time_criticality: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAOCAYAAAAfSC3RAAABBElEQVR4nHXRIXKDQBiG4Y8bICvjMjhuUI5QR2UsqlTi4mqpwkYW1yNsb4Bj6iIruUH7fiXbwJS8Mw/MLPsvzJBISvGCDB16bFWiwojGgx0a7CTt0WOrEp84ixclXIKkGgfN93s8IoMb8YYPtDiJe8KlhOvhB+8YsNPcWVKOB9T43Z8g5gV/ihuQwk3I4fbwC1aDQVKhedOAQnNB17Wgy3ocDLosLHqCe8WyIPYuB2u4Ae4bLkh6RqzFarDQuqC5QuuCWIuDOQ66vvVWLU7iq+Kg69DgqP8HtDiKH48KWg6m+HtAOdwAFw+esDmYwZu+4O5QYcTmYIf4IEcKN2FACh/sQ/QDYrE9zd2lgwUAAAAASUVORK5CYII=');
+    /* Icon 'streamline-pixel--free--14x14-Interface-Essential-Link-Broken-1--Streamline-Pixel.png' from https://www.streamlinehq.com/ */
+    --icon_quantifiers_opportunity_enablement_or_risk_reduction: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAOCAYAAAAfSC3RAAAA6ElEQVR4nI3PsVGEQACF4UcHFxqaGUoHUoJG2AIZ6VVguhmpoRfZwtrBZg4ZJVCC/7udFVDu5v6Z7wKOt8xWWnqC+4KrkbBbhVIjKaCGi8rPdlsPXUAjqcczerToUPrG8e/QNcpF5aKWZ+6At/UwKtdoW40AN+CEuB7eUlQ+eDNs0aFHQumAR7hX+J3fYcC78iAqn1oacILz/zPOwxYjJnFpdKjhEgZ8oHSH0cOo/AW/cMS9pAe4EZOWg9yMVPETtQx98gt6tPAw4V8elhcm5ZOjtnfezUMX8Al3vgMSLlaGrlFuRsLVfgDDFDXmUtKoowAAAABJRU5ErkJggg==');
     
 }
 
@@ -76,8 +94,8 @@ h1, h2, h3, h4, h5 {
     font-weight: 300;
     break-after: avoid;
     display: block;
-    padding:0px;
-    margin: 0px;
+    padding:0;
+    margin: 0;
 
 }
 
@@ -145,7 +163,9 @@ a:visited:hover {
 p > a {
     text-decoration: underline dotted;
 }
-
+pre {
+    font-size: 0.5rem;
+}
 r-project > r-description {
     margin-right:2rem;
     
@@ -156,15 +176,9 @@ r-objective, r-milestone {
     border-radius: 5px;
     position:relative;
 
-    margin-top: 1rem; 
-    margin-bottom: 2rem; 
-    margin-left: 0rem; 
-    margin-right: 1rem; 
+    margin: 1rem 1rem 2rem 0;
 
-    padding-top: 0.5rem; 
-    padding-bottom: 0.5rem; 
-    padding-left: 0.5rem; 
-    padding-right: 0.5rem; 
+    padding: 0.5rem;
 
 }
 
@@ -188,8 +202,8 @@ r-keyresults {
     padding: 1rem 1rem 0.5rem 2rem;
     position: relative;
     margin-left: 7rem;
-    margin-top: 0rem;
-    margin-bottom: 0rem;
+    margin-top: 0;
+    margin-bottom: 0;
     display: block;
 }
 
@@ -227,16 +241,10 @@ r-deliverable {
     display: block;
     border-radius: 5px;
     position:relative;
-    
-    margin-top: 0rem; 
-    margin-bottom: 0.8rem; 
-    margin-left: 0rem; 
-    margin-right: 0rem; 
 
-    padding-top: 0.5rem; 
-    padding-bottom: 0.2rem; 
-    padding-left: 0.8rem; 
-    padding-right: 0.5rem; 
+    margin: 0 0 0.8rem;
+
+    padding: 0.5rem 0.5rem 0.2rem 0.8rem;
 }
 
 r-objective {
@@ -262,7 +270,6 @@ r-milestone > r-header {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: flex-start;
     align-items: flex-start;
     flex: 1 auto;
     justify-content: space-between;
@@ -295,7 +302,6 @@ r-deliverable > r-header {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    justify-content: flex-start;
     align-items: flex-start;
     justify-content: space-between;
     padding-top: 0.2rem;
@@ -331,14 +337,9 @@ r-deliverable > r-header > r-state {
 
 r-state > span, 
 r-requirement > span {
-        margin:0rem;
-        margin-left: 0.2rem;
-        margin-right: 0.2rem;
-        padding-top: 0.1rem;
-        padding-bottom: 0.1rem;
-        padding-left: 0.2rem;
-        padding-right: 0.2rem;
-        border-radius: 0.25rem;
+    margin: 0 0.2rem;
+    padding: 0.1rem 0.2rem;
+    border-radius: 0.25rem;
         border: 1px solid var(--color_state_todo);
         background-color: var(--color_state_todo);;
         color: var(--color_state__text);
@@ -582,8 +583,8 @@ r-milestones::after {
     position: absolute;
     width: 0.45rem;
     background-color: gray;
-    top: 0rem;
-    bottom: 0rem;
+    top: 0;
+    bottom: 0;
     left: 50%;
     margin: 0 auto;
     padding:0;
@@ -639,16 +640,16 @@ r-milestone:nth-child(even)::before {
         left: 0;
         display:block;
         margin-right: 1rem;
-        margin-left:0px;
+        margin-left:0;
         width: 90%;
     }
     r-milestone:nth-child(odd) {
         margin-right: 1rem;
-        margin-left:0px;
+        margin-left:0;
     }
     r-milestone:nth-child(even) {
         margin-right: 1rem;
-        margin-left:0px;
+        margin-left:0;
     }
 
     /* Make sure that all arrows are pointing leftwards */
@@ -664,7 +665,6 @@ r-milestone:nth-child(even)::before {
 
     /* Make all right containers behave like the left ones */
     r-milestone:nth-child(even) {
-        left: 0%;
         left:0;
         margin-left: 0;
     }
@@ -674,7 +674,7 @@ r-milestone:nth-child(even)::before {
         font-weight: bold !important;
         font-size: 0.9rem !important;
         text-align: right !important;
-        left: 0rem;
+        left: 0;
     }
 
     r-milestone > r-date {
@@ -683,7 +683,7 @@ r-milestone:nth-child(even)::before {
         font-weight: bold !important;
         font-size: 0.9rem !important;
         text-align: right !important;
-        left: 0rem;
+        left: 0;
     }
 }
 /* Media queries - Responsive r-timeline on screens less than 600px wide */
@@ -698,17 +698,17 @@ r-milestone:nth-child(even)::before {
         left: 0;
         display:block;
         margin-right: 1rem;
-        margin-left:0px;
+        margin-left:0;
         break-inside: avoid-page;
         
     }
     r-milestone:nth-child(odd) {
         margin-right: 1rem;
-        margin-left:0px;
+        margin-left:0;
     }
     r-milestone:nth-child(even) {
         margin-right: 1rem;
-        margin-left:0px;
+        margin-left:0;
     }
 
     /* Make sure that all arrows are pointing leftwards */
@@ -723,12 +723,12 @@ r-milestone:nth-child(even)::before {
 
     /* Make all right containers behave like the left ones */
     r-milestone:nth-child(even) {
-        left: 0%;
+        left: 0;
         left:0;
         margin-left: 0;
     }
     r-milestone:nth-child(even) {
-        left: 0%;
+        left: 0;
         left:0;
         margin-left: 0;
     }
@@ -738,7 +738,7 @@ r-milestone:nth-child(even)::before {
         font-weight: bold !important;
         font-size: 0.9rem !important;
         text-align: right !important;
-        left: 0rem;
+        left: 0;
     }
 
     r-milestone > r-date {
@@ -747,7 +747,7 @@ r-milestone:nth-child(even)::before {
         font-weight: bold !important;
         font-size: 0.9rem !important;
         text-align: right !important;
-        left: 0rem;
+        left: 0;
     }
 }
 
@@ -762,11 +762,11 @@ r-description > ul {
     display: flex;
     flex-direction: row;
     
-    padding: 0rem;
+    padding: 0;
     padding-top: 1rem;
     padding-bottom: 0.5rem;
     
-    margin: 0rem;
+    margin: 0;
     margin-right: 2rem;
     margin-bottom:1rem;
 
@@ -781,16 +781,16 @@ r-description > ul {
 
 .authors > ul {
     list-style: none;
-    margin: 0rem;
-    padding: 0rem;
+    margin: 0;
+    padding: 0;
     margin-left: 2.65rem;
 
 }
 
 .author {
-    margin: 0rem;
+    margin: 0;
     margin-bottom: 0.5rem;
-    padding: 0rem;
+    padding: 0;
     border-left: 2px solid rgba(200,200,200,.5);
 }
 
@@ -806,17 +806,11 @@ r-description > ul {
 r-timeline {
     border-left: 0.3rem solid var(--keyresults_circle_border_color);
     background: var(--keyresults_background);
-    
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-    margin-left: 7rem;
-    margin-right: 2rem;
 
-    padding-top: 0.5rem ;
-    padding-bottom: 1rem;
-    padding-left: 1.1rem;
-    padding-right: 1rem;
-    
+    margin: 1rem 2rem 1rem 7rem;
+
+    padding: 0.5rem 1rem 1rem 1.1rem;
+
     position: relative;
     display: block;
 }
@@ -825,11 +819,10 @@ r-timeline > r-timeline-item {
     text-align: left;
     position: relative;
     display: block;
-    
-    margin:0rem;
-    padding:0rem;
 
-    margin-top: 0.5rem;
+    padding: 0;
+
+    margin: 0.5rem 0 0;
 
 }
 
@@ -849,11 +842,10 @@ r-timeline > r-timeline-item::after {
 r-timeline > r-timeline-item > r-date {
     position: absolute;
     left:-8rem;
-    top: 0rem;
-    
+    top: 0;
     font-weight: bold;
     font-size: 0.9rem;
-    width: 5.5rem;
+    width: 6rem;
     text-align: right;
 }
 r-timeline > r-timeline-item > r-name > h3 {
@@ -864,18 +856,18 @@ r-timeline > r-timeline-item > r-description {
     text-align: left;
     position: relative;
     padding-bottom: 1rem;
-    margin-bottom: 0rem;
+    margin-bottom: 0;
     display: block;
 }
 r-timeline > r-timeline-item > r-description > p {
-    margin:0rem;
-    padding:0rem;
+    margin: 0;
+    padding: 0;
     padding-top: 0.5rem;
 }
 
 r-timeline > r-timeline-item > r-description > ul,h5,h6 {
     margin-top: 0.5rem;
-    margin-bottom: 0rem;
+    margin-bottom: 0;
 }
 r-timeline > r-timeline-item > r-description > ul,p {
     font-size: 0.9rem;
@@ -885,7 +877,7 @@ r-timeline > r-timeline-item > r-description > ul,p {
 r-milestone > r-date {
     display: block;
     position: absolute;
-    bottom: 0rem;
+    bottom: 0;
     right: -11.5rem;
     width: 9rem;
     border-bottom: 0.1rem solid var(--milestone_boxshadow);
@@ -898,7 +890,7 @@ r-milestone > r-date {
 r-deliverable > r-date {
     display: block;
     position: absolute;
-    bottom: 0rem;
+    bottom: 0;
     right: -12rem;
     width: 9rem;
     border-bottom: 0.1rem dashed grey;
@@ -920,7 +912,7 @@ r-milestone:nth-child(even) > r-date {
 r-objective > r-date {
     display: block;
     position: relative;
-    right: 0rem;
+    right: 0;
     font-weight: bold;
     text-align: left;
     color: gray;
@@ -943,8 +935,8 @@ r-todos {
 }
 r-todo {
     display: block;
-    margin: 0rem;
-    padding: 0rem;
+    margin: 0;
+    padding: 0;
     margin-bottom: 0.3rem;
     margin-left: 0.3rem;
     font-size: 0.8rem !important;
@@ -970,9 +962,120 @@ r-todo > r-description {
     padding-left: 0.9rem;
 }
 r-todo > r-description > p {
-    padding-bottom: 0rem;
-    margin-bottom: 0rem;
+    padding-bottom: 0;
+    margin-bottom: 0;
     font-size: 0.8rem !important;
+}
+
+/* Tooltip container */
+.tooltip {
+    position: relative;
+    display: inline-block;
+    /*border-bottom: 1px dotted grey; *//* If you want dots under the hoverable text */
+}
+.tooltiptext {
+    display: inline;
+}
+
+/* Tooltip text */
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: auto;
+    background-color: var(--color_tooltip_background);
+    color: black;
+    text-align: left;
+    padding: 0.5rem;
+    border-radius: 6px;
+    box-shadow: 1px 2px 2px 2px var(--color_tooltip_boxshadow);
+    font-size: 0.8rem;
+    opacity: 0.95;
+    /* Position the tooltip text - see examples below! */
+    position: absolute;
+    z-index: 1;
+    top: 100%;
+    left: 50%;
+    margin-left: -60px; /* Use half of the width (120/2 = 60), to center the tooltip */
+    margin-top:0.5rem;
+
+}
+.tooltip .tooltiptext::after {
+    content: " ";
+    position: absolute;
+    bottom: 100%;  /* At the top of the tooltip */
+    left: 50%; /* red arrow is centered */
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent transparent var(--color_tooltip_arrow) transparent;
+}
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}
+r-quantifiers {
+    border-top: 1px dashed gray;
+    display: block;
+    margin: 0;
+    padding: 0.5rem 0.2rem;
+    font-size: 0.8rem;
+    color: black;
+    
+}
+r-weighted_shortest_job_first,r-cost_of_delay,r-jobsize, r-user_business_value, r-time_criticality,  r-opportunity_enablement_or_risk_reduction {
+    display:inline-block;
+    width: auto;
+    background-repeat: no-repeat;
+    margin-top: 0;
+    margin-bottom:0.5rem;
+    padding-left: 1.3rem;
+    padding-right: 0.5rem;
+    padding-top: 0;
+    text-wrap: none;
+}
+
+r-cost_of_delay {
+    background-image: var(--icon_quantifiers_cost_of_delay);
+}
+r-jobsize {
+    background-image: var(--icon_quantifiers_jobsize);
+}
+r-weighted_shortest_job_first {
+    background-image:var(--icon_quantifiers_weighted_shortest_job_first);
+}
+
+r-user_business_value {
+    background-image: var(--icon_quantifiers_user_business_value);
+}
+r-time_criticality {
+    background-image:var(--icon_quantifiers_time_criticality);
+}
+r-opportunity_enablement_or_risk_reduction {
+    background-image: var(--icon_quantifiers_opportunity_enablement_or_risk_reduction);
+}
+.tooltip table {
+    border-collapse: collapse;
+}
+.tooltip td {
+    border: 0;
+    margin: 0;
+    padding:0;
+    vertical-align: top;
+    text-wrap: none;
+    padding-top:0.1rem;
+    padding-bottom:0.1rem;
+}
+.tooltip td:nth-child(2) {
+    text-align: right;
+    padding-left: 0;
+    font-weight: bold;
+}
+.tooltip tr {
+    border-bottom: 1px dotted gray;
+}
+.tooltip caption {
+    text-align:left;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
 }</style>
     </head>
     <body>
@@ -1091,7 +1194,22 @@ We should do something for the <a href="https://github.com/uroflavin/roadmap">ro
                                             <r-reference>
                                                 <a class="card-link" target="_blank" href="https://github.com/uroflavin/roadmap/blob/main/README.md">see README</a>
                                             </r-reference>
-                                        </r-deliverable>
+                                        
+                                            
+                                                    <r-quantifiers>
+            
+                
+                    <r-cost_of_delay class="tooltip">Cost of Delay: 20<span class="tooltiptext">
+                        <table>
+                            <caption>Cost of delay</caption>
+                            <tbody>
+                                <tr><td><r-user_business_value>User Value<br> Business Value</r-user_business_value></td><td>10</td></tr>
+                                <tr><td><r-time_criticality>Time Criticality</r-time_criticality></td><td>0</td></tr>
+                                <tr><td><r-opportunity_enablement_or_risk_reduction>Opportunity Enablement<br> Risk Reduction</r-opportunity_enablement_or_risk_reduction></td><td>10</td></tr>
+                            </tbody>
+                        </table>
+                    </span></r-cost_of_delay>
+                </r-quantifiers></r-deliverable>
                                 
                                     
                                         
@@ -1115,7 +1233,23 @@ We should do something for the <a href="https://github.com/uroflavin/roadmap">ro
                                             <r-reference>
                                                 <a class="card-link" target="_blank" href="https://github.com/uroflavin/roadmap/blob/main/examples/roadmap.yml">see roadmap.yml</a>
                                             </r-reference>
-                                        </r-deliverable>
+                                        
+                                            
+                                                    <r-quantifiers>
+            
+            <r-weighted_shortest_job_first class="tooltip">WSJF:  2.05<span class="tooltiptext">
+                <table>
+                    <caption>Weighted Shortest Job First</caption>
+                    <tbody>
+                        <tr><td><r-jobsize>Jobsize</r-jobsize></td><td>10</td></tr>
+                        <tr><td><r-cost_of_delay>Cost of Delay</r-cost_of_delay><td>20</td></tr>
+                        <tr><td><r-user_business_value>User Value<br>Business Value</r-user_business_value></td><td>10</td></tr>
+                        <tr><td><r-time_criticality>Time Criticality</r-time_criticality></td><td>0</td></tr>
+                        <tr><td><r-opportunity_enablement_or_risk_reduction>Opportunity Enablement<br>Risk Reduction</r-opportunity_enablement_or_risk_reduction></td><td>10</td></tr>
+                     </tbody>
+                </table>
+            </span></r-weighted_shortest_job_first>
+            </r-quantifiers></r-deliverable>
                                 </r-deliverables>
                         </r-milestone>
                 
@@ -1157,7 +1291,23 @@ This will allow us to document the file structure and provide a first class edit
                                             <r-reference>
                                                 <a class="card-link" target="_blank" href="https://github.com/uroflavin/roadmap/blob/main/schema/roadmap.json">see roadmap.json</a>
                                             </r-reference>
-                                        </r-deliverable>
+                                        
+                                            
+                                                    <r-quantifiers>
+            
+            <r-weighted_shortest_job_first class="tooltip">WSJF:  2.05<span class="tooltiptext">
+                <table>
+                    <caption>Weighted Shortest Job First</caption>
+                    <tbody>
+                        <tr><td><r-jobsize>Jobsize</r-jobsize></td><td>10</td></tr>
+                        <tr><td><r-cost_of_delay>Cost of Delay</r-cost_of_delay><td>20</td></tr>
+                        <tr><td><r-user_business_value>User Value<br>Business Value</r-user_business_value></td><td>10</td></tr>
+                        <tr><td><r-time_criticality>Time Criticality</r-time_criticality></td><td>0</td></tr>
+                        <tr><td><r-opportunity_enablement_or_risk_reduction>Opportunity Enablement<br>Risk Reduction</r-opportunity_enablement_or_risk_reduction></td><td>10</td></tr>
+                     </tbody>
+                </table>
+            </span></r-weighted_shortest_job_first>
+            </r-quantifiers></r-deliverable>
                                 
                                     
                                         
@@ -1181,7 +1331,23 @@ This will allow us to document the file structure and provide a first class edit
                                             <r-reference>
                                                 <a class="card-link" target="_blank" href="https://github.com/uroflavin/roadmap/blob/main/schema/roadmap.json">see roadmap.json</a>
                                             </r-reference>
-                                        </r-deliverable>
+                                        
+                                            
+                                                    <r-quantifiers>
+            
+            <r-weighted_shortest_job_first class="tooltip">WSJF:  20.05<span class="tooltiptext">
+                <table>
+                    <caption>Weighted Shortest Job First</caption>
+                    <tbody>
+                        <tr><td><r-jobsize>Jobsize</r-jobsize></td><td>1</td></tr>
+                        <tr><td><r-cost_of_delay>Cost of Delay</r-cost_of_delay><td>20</td></tr>
+                        <tr><td><r-user_business_value>User Value<br>Business Value</r-user_business_value></td><td>10</td></tr>
+                        <tr><td><r-time_criticality>Time Criticality</r-time_criticality></td><td>0</td></tr>
+                        <tr><td><r-opportunity_enablement_or_risk_reduction>Opportunity Enablement<br>Risk Reduction</r-opportunity_enablement_or_risk_reduction></td><td>10</td></tr>
+                     </tbody>
+                </table>
+            </span></r-weighted_shortest_job_first>
+            </r-quantifiers></r-deliverable>
                                 </r-deliverables>
                         </r-milestone>
                 
@@ -1216,7 +1382,23 @@ This will allow us to document the file structure and provide a first class edit
                                         <r-description>
                                             <p>Understand the Syntax of the go-template from <a href="https://github.com/SierraSoftworks/roadmap/blob/main/tools/roadmap-md/roadmap.basic.md">https://github.com/SierraSoftworks/roadmap/blob/main/tools/roadmap-md/roadmap.basic.md</a></p>
                                         </r-description>
-                                        </r-deliverable>
+                                        
+                                            
+                                                    <r-quantifiers>
+            
+            <r-weighted_shortest_job_first class="tooltip">WSJF:  0.05<span class="tooltiptext">
+                <table>
+                    <caption>Weighted Shortest Job First</caption>
+                    <tbody>
+                        <tr><td><r-jobsize>Jobsize</r-jobsize></td><td>2</td></tr>
+                        <tr><td><r-cost_of_delay>Cost of Delay</r-cost_of_delay><td>0</td></tr>
+                        <tr><td><r-user_business_value>User Value<br>Business Value</r-user_business_value></td><td>0</td></tr>
+                        <tr><td><r-time_criticality>Time Criticality</r-time_criticality></td><td>0</td></tr>
+                        <tr><td><r-opportunity_enablement_or_risk_reduction>Opportunity Enablement<br>Risk Reduction</r-opportunity_enablement_or_risk_reduction></td><td>0</td></tr>
+                     </tbody>
+                </table>
+            </span></r-weighted_shortest_job_first>
+            </r-quantifiers></r-deliverable>
                                 
                                     
                                         
@@ -1234,13 +1416,29 @@ This will allow us to document the file structure and provide a first class edit
                                         <r-description>
                                             <p>Develop a jinja2 template for markdown output of the roadmap</p>
                                         </r-description>
-                                        </r-deliverable>
+                                        
+                                            
+                                                    <r-quantifiers>
+            
+            <r-weighted_shortest_job_first class="tooltip">WSJF:  1.225<span class="tooltiptext">
+                <table>
+                    <caption>Weighted Shortest Job First</caption>
+                    <tbody>
+                        <tr><td><r-jobsize>Jobsize</r-jobsize></td><td>9</td></tr>
+                        <tr><td><r-cost_of_delay>Cost of Delay</r-cost_of_delay><td>11</td></tr>
+                        <tr><td><r-user_business_value>User Value<br>Business Value</r-user_business_value></td><td>1</td></tr>
+                        <tr><td><r-time_criticality>Time Criticality</r-time_criticality></td><td>0</td></tr>
+                        <tr><td><r-opportunity_enablement_or_risk_reduction>Opportunity Enablement<br>Risk Reduction</r-opportunity_enablement_or_risk_reduction></td><td>10</td></tr>
+                     </tbody>
+                </table>
+            </span></r-weighted_shortest_job_first>
+            </r-quantifiers></r-deliverable>
                                 
                                     
                                         
                                     <r-deliverable id="m3_d3" class="DONE">
                                         <r-header>
-                                            <r-name><h4>markdonw-renderer</h4></r-name>
+                                            <r-name><h4>markdown-renderer</h4></r-name>
                                             
                                                 <r-requirement>
                                                     <span class="MUST-inverted">MUST</span>
@@ -1256,7 +1454,23 @@ This will allow us to document the file structure and provide a first class edit
                                             <r-reference>
                                                 <a class="card-link" target="_blank" href="https://github.com/uroflavin/roadmap/blob/main/roadmap/roadmap.md">see Markdown-result of this roadmap.yml</a>
                                             </r-reference>
-                                        </r-deliverable>
+                                        
+                                            
+                                                    <r-quantifiers>
+            
+            <r-weighted_shortest_job_first class="tooltip">WSJF:  2.05<span class="tooltiptext">
+                <table>
+                    <caption>Weighted Shortest Job First</caption>
+                    <tbody>
+                        <tr><td><r-jobsize>Jobsize</r-jobsize></td><td>10</td></tr>
+                        <tr><td><r-cost_of_delay>Cost of Delay</r-cost_of_delay><td>20</td></tr>
+                        <tr><td><r-user_business_value>User Value<br>Business Value</r-user_business_value></td><td>10</td></tr>
+                        <tr><td><r-time_criticality>Time Criticality</r-time_criticality></td><td>0</td></tr>
+                        <tr><td><r-opportunity_enablement_or_risk_reduction>Opportunity Enablement<br>Risk Reduction</r-opportunity_enablement_or_risk_reduction></td><td>10</td></tr>
+                     </tbody>
+                </table>
+            </span></r-weighted_shortest_job_first>
+            </r-quantifiers></r-deliverable>
                                 </r-deliverables>
                         </r-milestone>
                 
@@ -1296,7 +1510,23 @@ Use SierraSoftworks-Go-Template as a starting point</p>
                                             <r-reference>
                                                 <a class="card-link" target="_blank" href="https://github.com/SierraSoftworks/roadmap/blob/main/tools/roadmap-html/roadmap.html">see SierraSoftworks-Go-Template</a>
                                             </r-reference>
-                                        </r-deliverable>
+                                        
+                                            
+                                                    <r-quantifiers>
+            
+            <r-weighted_shortest_job_first class="tooltip">WSJF:  1.225<span class="tooltiptext">
+                <table>
+                    <caption>Weighted Shortest Job First</caption>
+                    <tbody>
+                        <tr><td><r-jobsize>Jobsize</r-jobsize></td><td>9</td></tr>
+                        <tr><td><r-cost_of_delay>Cost of Delay</r-cost_of_delay><td>11</td></tr>
+                        <tr><td><r-user_business_value>User Value<br>Business Value</r-user_business_value></td><td>1</td></tr>
+                        <tr><td><r-time_criticality>Time Criticality</r-time_criticality></td><td>0</td></tr>
+                        <tr><td><r-opportunity_enablement_or_risk_reduction>Opportunity Enablement<br>Risk Reduction</r-opportunity_enablement_or_risk_reduction></td><td>10</td></tr>
+                     </tbody>
+                </table>
+            </span></r-weighted_shortest_job_first>
+            </r-quantifiers></r-deliverable>
                                 
                                     
                                         
@@ -1318,7 +1548,23 @@ Use SierraSoftworks-Go-Template as a starting point</p>
                                             <r-reference>
                                                 <a class="card-link" target="_blank" href="https://github.com/uroflavin/roadmap/blob/main/roadmap/roadmap.html">see HTML-result of this roadmap.yml</a>
                                             </r-reference>
-                                        </r-deliverable>
+                                        
+                                            
+                                                    <r-quantifiers>
+            
+            <r-weighted_shortest_job_first class="tooltip">WSJF:  2.05<span class="tooltiptext">
+                <table>
+                    <caption>Weighted Shortest Job First</caption>
+                    <tbody>
+                        <tr><td><r-jobsize>Jobsize</r-jobsize></td><td>10</td></tr>
+                        <tr><td><r-cost_of_delay>Cost of Delay</r-cost_of_delay><td>20</td></tr>
+                        <tr><td><r-user_business_value>User Value<br>Business Value</r-user_business_value></td><td>10</td></tr>
+                        <tr><td><r-time_criticality>Time Criticality</r-time_criticality></td><td>0</td></tr>
+                        <tr><td><r-opportunity_enablement_or_risk_reduction>Opportunity Enablement<br>Risk Reduction</r-opportunity_enablement_or_risk_reduction></td><td>10</td></tr>
+                     </tbody>
+                </table>
+            </span></r-weighted_shortest_job_first>
+            </r-quantifiers></r-deliverable>
                                 </r-deliverables>
                         </r-milestone>
                 
@@ -1357,7 +1603,23 @@ Use SierraSoftworks-Go-Template as a starting point</p>
                                             <r-reference>
                                                 <a class="card-link" target="_blank" href="https://github.com/SierraSoftworks/roadmap/blob/main/tools/roadmap-graphviz/roadmap.dot">see SierraSoftworks-Go-Template</a>
                                             </r-reference>
-                                        </r-deliverable>
+                                        
+                                            
+                                                    <r-quantifiers>
+            
+            <r-weighted_shortest_job_first class="tooltip">WSJF:  1.225<span class="tooltiptext">
+                <table>
+                    <caption>Weighted Shortest Job First</caption>
+                    <tbody>
+                        <tr><td><r-jobsize>Jobsize</r-jobsize></td><td>9</td></tr>
+                        <tr><td><r-cost_of_delay>Cost of Delay</r-cost_of_delay><td>11</td></tr>
+                        <tr><td><r-user_business_value>User Value<br>Business Value</r-user_business_value></td><td>1</td></tr>
+                        <tr><td><r-time_criticality>Time Criticality</r-time_criticality></td><td>0</td></tr>
+                        <tr><td><r-opportunity_enablement_or_risk_reduction>Opportunity Enablement<br>Risk Reduction</r-opportunity_enablement_or_risk_reduction></td><td>10</td></tr>
+                     </tbody>
+                </table>
+            </span></r-weighted_shortest_job_first>
+            </r-quantifiers></r-deliverable>
                                 
                                     
                                         
@@ -1375,7 +1637,23 @@ Use SierraSoftworks-Go-Template as a starting point</p>
                                         <r-description>
                                             <p>Put some code in roadmap.py to render roadmap as dot-file</p>
                                         </r-description>
-                                        </r-deliverable>
+                                        
+                                            
+                                                    <r-quantifiers>
+            
+            <r-weighted_shortest_job_first class="tooltip">WSJF:  2.05<span class="tooltiptext">
+                <table>
+                    <caption>Weighted Shortest Job First</caption>
+                    <tbody>
+                        <tr><td><r-jobsize>Jobsize</r-jobsize></td><td>10</td></tr>
+                        <tr><td><r-cost_of_delay>Cost of Delay</r-cost_of_delay><td>20</td></tr>
+                        <tr><td><r-user_business_value>User Value<br>Business Value</r-user_business_value></td><td>10</td></tr>
+                        <tr><td><r-time_criticality>Time Criticality</r-time_criticality></td><td>0</td></tr>
+                        <tr><td><r-opportunity_enablement_or_risk_reduction>Opportunity Enablement<br>Risk Reduction</r-opportunity_enablement_or_risk_reduction></td><td>10</td></tr>
+                     </tbody>
+                </table>
+            </span></r-weighted_shortest_job_first>
+            </r-quantifiers></r-deliverable>
                                 
                                     
                                         
@@ -1394,7 +1672,23 @@ Use SierraSoftworks-Go-Template as a starting point</p>
                                             <p>Put some code in roadmap.py to convert dot-file to png
 e.g. the generated file roadmap.dot.png can be used in your project description.</p>
                                         </r-description>
-                                        </r-deliverable>
+                                        
+                                            
+                                                    <r-quantifiers>
+            
+            <r-weighted_shortest_job_first class="tooltip">WSJF:  5.335<span class="tooltiptext">
+                <table>
+                    <caption>Weighted Shortest Job First</caption>
+                    <tbody>
+                        <tr><td><r-jobsize>Jobsize</r-jobsize></td><td>3</td></tr>
+                        <tr><td><r-cost_of_delay>Cost of Delay</r-cost_of_delay><td>16</td></tr>
+                        <tr><td><r-user_business_value>User Value<br>Business Value</r-user_business_value></td><td>10</td></tr>
+                        <tr><td><r-time_criticality>Time Criticality</r-time_criticality></td><td>0</td></tr>
+                        <tr><td><r-opportunity_enablement_or_risk_reduction>Opportunity Enablement<br>Risk Reduction</r-opportunity_enablement_or_risk_reduction></td><td>6</td></tr>
+                     </tbody>
+                </table>
+            </span></r-weighted_shortest_job_first>
+            </r-quantifiers></r-deliverable>
                                 </r-deliverables>
                         </r-milestone>
                 
@@ -1456,7 +1750,23 @@ csv output should contain all roadmap items, without the meta-information regard
                                             <r-reference>
                                                 <a class="card-link" target="_blank" href="https://github.com/uroflavin/roadmap/blob/main/roadmap/roadmap.csv">see roadmap.csv</a>
                                             </r-reference>
-                                        </r-deliverable>
+                                        
+                                            
+                                                    <r-quantifiers>
+            
+            <r-weighted_shortest_job_first class="tooltip">WSJF:  1.15<span class="tooltiptext">
+                <table>
+                    <caption>Weighted Shortest Job First</caption>
+                    <tbody>
+                        <tr><td><r-jobsize>Jobsize</r-jobsize></td><td>10</td></tr>
+                        <tr><td><r-cost_of_delay>Cost of Delay</r-cost_of_delay><td>11</td></tr>
+                        <tr><td><r-user_business_value>User Value<br>Business Value</r-user_business_value></td><td>1</td></tr>
+                        <tr><td><r-time_criticality>Time Criticality</r-time_criticality></td><td>0</td></tr>
+                        <tr><td><r-opportunity_enablement_or_risk_reduction>Opportunity Enablement<br>Risk Reduction</r-opportunity_enablement_or_risk_reduction></td><td>10</td></tr>
+                     </tbody>
+                </table>
+            </span></r-weighted_shortest_job_first>
+            </r-quantifiers></r-deliverable>
                                 
                                     
                                         
@@ -1474,7 +1784,23 @@ csv output should contain all roadmap items, without the meta-information regard
                                         <r-description>
                                             <p>Put some code in roadmap.py to render roadmap as XLS File</p>
                                         </r-description>
-                                        </r-deliverable>
+                                        
+                                            
+                                                    <r-quantifiers>
+            
+            <r-weighted_shortest_job_first class="tooltip">WSJF:  2.05<span class="tooltiptext">
+                <table>
+                    <caption>Weighted Shortest Job First</caption>
+                    <tbody>
+                        <tr><td><r-jobsize>Jobsize</r-jobsize></td><td>10</td></tr>
+                        <tr><td><r-cost_of_delay>Cost of Delay</r-cost_of_delay><td>20</td></tr>
+                        <tr><td><r-user_business_value>User Value<br>Business Value</r-user_business_value></td><td>10</td></tr>
+                        <tr><td><r-time_criticality>Time Criticality</r-time_criticality></td><td>0</td></tr>
+                        <tr><td><r-opportunity_enablement_or_risk_reduction>Opportunity Enablement<br>Risk Reduction</r-opportunity_enablement_or_risk_reduction></td><td>10</td></tr>
+                     </tbody>
+                </table>
+            </span></r-weighted_shortest_job_first>
+            </r-quantifiers></r-deliverable>
                                 </r-deliverables>
                         </r-milestone>
                 
@@ -1527,7 +1853,14 @@ See <a href="https://graphviz.org/">graphviz.org</a></p></r-description>
                                             <p>The most important part of this milestone is the development of a web based renderer which can present a road map file. 
 This renderer is going to form the basis for our user flows, including acting as a realtime preview for the editor and a final output for the repository viewer.      </p>
                                         </r-description>
-                                        </r-deliverable>
+                                        
+                                            
+                                                    <r-quantifiers>
+            
+                
+                    <r-jobsize>Jobsize: 10</r-jobsize>
+                
+                    </r-quantifiers></r-deliverable>
                                 
                                     
                                         
@@ -1545,7 +1878,16 @@ This renderer is going to form the basis for our user flows, including acting as
                                         <r-description>
                                             <p>The renderer should support Markdown</p>
                                         </r-description>
-                                        </r-deliverable>
+                                        
+                                            
+                                                    <r-quantifiers>
+            
+                
+                    
+                        <r-user_business_value>User Value / Business Value: 10</r-user_business_value>
+                    
+                        <r-time_criticality>Time Criticality: 0</r-time_criticality>
+                    </r-quantifiers></r-deliverable>
                                 
                                     
                                         
@@ -1697,10 +2039,10 @@ This includes things like being able to visualize your road map in common format
                                             <r-name><h5>Roadmap Milestones as CSV-File</h5></r-name>
                                             
                                                 <r-requirement>
-                                                    <span class="MAY">MAY</span>
+                                                    <span class="MAY-inverted">MAY</span>
                                                 </r-requirement> 
                                             <r-state>
-                                                <span class="DOING">DOING</span>
+                                                <span class="DONE">DONE</span>
                                             </r-state> 
                                         </r-header>
                                         <r-description>
@@ -1787,5 +2129,6 @@ Our goal is that someone with no familiarity with our tooling can ramp up and ha
                 </r-objectives>
         
     
+    <footer><pre>version:1a3e914d/20240302100338</pre></footer>
     </body>
 </html>
